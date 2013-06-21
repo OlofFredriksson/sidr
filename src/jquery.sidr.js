@@ -98,7 +98,7 @@
         // Prepare page
         scrollTop = $html.scrollTop();
         $html.css('overflow-x', 'hidden').scrollTop(scrollTop);
-
+        $html.addClass('is-sidr');
         // Open menu
         $body.css({
           width: $body.width(),
@@ -141,6 +141,7 @@
           $menu.removeAttr('style');
           $body.removeAttr('style');
           $('html').removeAttr('style');
+          $html.removeClass('is-sidr');
           sidrMoving = false;
           sidrOpened = false;
           // Callback
